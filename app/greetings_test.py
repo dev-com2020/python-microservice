@@ -2,7 +2,7 @@ from .server import GreetingsGenerator
 
 
 def test_greetings_with_name():
-    values = {'age': ['12'], 'name': ['Jan']}
+    values = {'age': ['22'], 'name': ['Maciek']}
     generator = GreetingsGenerator(values)
     assert generator.generate() == "hello Jan"
 
