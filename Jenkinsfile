@@ -13,7 +13,7 @@ pipeline {
             steps {
                 script {
                     dir('app') {
-                        sh '''
+                        cmd '''
                             python -m venv env
                             env/bin/pip install -r requirements-dev.txt
                             env/bin/pytest . --junit-xml=pytest_junit.xml
